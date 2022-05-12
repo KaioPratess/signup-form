@@ -15,7 +15,6 @@ img {
   display: flex;
 }
 
-
 /* BRAND SECTION */
 .brand {
   flex: 1;
@@ -48,7 +47,6 @@ img {
   font-family: "Red Hat Display", serif;
   font-size: 3rem;
 }
-
 
 /* CONTENT SECTION */
 .content {

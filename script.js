@@ -4,6 +4,7 @@ const pwdConfirm = document.querySelector("#pwd-confirm");
 const pwdConfirmContainer = document.querySelector(".input-container div:nth-child(7)");
 const btnSubmit = document.querySelector(".btn");
 const inputs = document.querySelectorAll("input:not([type='password'])");
+const form = document.querySelector(".form");
 
 function validatePwd(event) {
   if(pwd.value !== pwdConfirm.value) {
@@ -13,7 +14,6 @@ function validatePwd(event) {
   } else {
     pwdContainer.classList.remove("error");
     pwdConfirmContainer.classList.remove("error");
-    window.alert("Submitted!");
   }
 }
 
@@ -27,8 +27,16 @@ function checkValidity() {
   }
 }
 
+function showMessage(event) {
+  event.preventDefault;
+  window.alert('Success');
+  setTimeout(() => form.submit(), 2000);
+}
 
 btnSubmit.addEventListener('click', validatePwd);
+
 inputs.forEach((input) => {
-  input.addEventListener("change", checkValidity)
+  input.addEventListener('change', checkValidity);
 });
+
+form.addEventListener('submit', showMessage);
