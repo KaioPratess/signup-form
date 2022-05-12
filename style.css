@@ -33,7 +33,6 @@ img {
   align-items: center;
   gap: 40px;
   color: white;
-
 }
 
 .banner-img {
@@ -127,11 +126,19 @@ img {
   box-shadow: 1px 1px 1px #91acf7;
 }
 
-.input-container input.error {
+.input-container .error input {
   border: 1px solid #DD9191;
 }
 
-.input-container div:nth-child(6)::after {
+.valid:valid {
+  border: 1px solid greenyellow;
+}
+
+.invalid:invalid {
+  border: 1px solid #DD9191;
+}
+
+.input-container div:nth-child(6).error::after {
   content: "* Passwords do not match";
   display: block;
   color: #DD9191;
