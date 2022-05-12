@@ -1,0 +1,162 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.structure {
+  display: flex;
+}
+
+
+/* BRAND SECTION */
+.brand {
+  flex: 1;
+  background: url('./img/max-kleinen-Jr_DkO3Ow14-unsplash.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.brand-banner {
+  background: rgba(0,0,0,.5);
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  color: white;
+
+}
+
+.banner-img {
+  width: 150px;
+  height: 150px;
+}
+
+.banner-img svg {
+  fill: white;
+}
+
+.brand-banner p {
+  font-family: "Red Hat Display", serif;
+  font-size: 3rem;
+}
+
+
+/* CONTENT SECTION */
+.content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #F9FAFB;
+  padding: 40px 0px;
+}
+
+.content > p {
+ font-weight: 700;
+ font-size: 1.5rem;
+ padding-left: 40px;
+ max-width: 55ch;
+}
+
+.content > p span {
+  font-style: italic;
+}
+
+.content > p:first-child {
+  margin-bottom: 30px;
+}
+
+.content > p + p {
+  margin-bottom: 60px;
+}
+
+.input-container {
+  padding: 15px 40px 30px 40px;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 70px;
+  margin-bottom: 40px;
+}
+
+.input-container p {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #5B636E;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.input-container div {
+  width: 250px;
+}
+
+.input-container label {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #5B636E;
+  letter-spacing: 1.5px;
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.input-container input {
+  width: 100%;
+  border: 1px solid #bfc0c1;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-family: "Roboto", sans-serif;
+  color: #5B636E;
+  outline: none;
+}
+
+.input-container input:focus {
+  border: 1px solid #91acf7;
+  box-shadow: 1px 1px 1px #91acf7;
+}
+
+.input-container input.error {
+  border: 1px solid #DD9191;
+}
+
+.input-container div:nth-child(6)::after {
+  content: "* Passwords do not match";
+  display: block;
+  color: #DD9191;
+  font-size: 0.75rem;
+  margin-top: 3px;
+}
+
+.btn {
+  margin-left: 40px;
+  padding: 14px 60px;
+  border-radius: 9px;
+  border: none;
+  background-color: #9e724f;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.form > p {
+  margin-left: 40px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.form > p a {
+  color: #9e724f;
+}
